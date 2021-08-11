@@ -2,5 +2,8 @@
 <div>
 <h2><%=@travel.title%></h2>
 <h4><%=@travel.content%></h4>
+<br>
+<br>
+<h4><%=link_to 'Delete Post', delete_path(@travel), method: :delete, data:{confirm:'Are you sure you want to delete the post?'} %></h4>
 <%=link_to 'Back Home', travels_path%>
 </div>
