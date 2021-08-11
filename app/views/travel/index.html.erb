@@ -1,6 +1,8 @@
 <h1>Travel Blog</h1>
 <div>
+<ul>
 <% @travel.each do |value| %>
-<%= value.title %>
+<li><%= link_to value.title, show_path(value)%></li>
 <% end %>
+</ul>
 </div>
