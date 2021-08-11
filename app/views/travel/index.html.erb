@@ -1,9 +1,11 @@
 <h1>Travel Blog</h1>
 <div>
+<h2>
 <ul>
 <% @travel.each do |value| %>
 <li><%= link_to value.title, travel_path(value)%></li>
 <% end %>
 </ul>
+</h2>
 <h4><%=link_to 'Add New Post', new_travel_path %></h4>
 </div>
