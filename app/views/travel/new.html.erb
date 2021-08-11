@@ -8,7 +8,7 @@
 <%=form.text_area :content, size: "70x5"%>
 <br>
 <br>
-<%= form.submit 'Add Post', data:{confirm:'Please make sure the title has more than 10 characters and both of title/content can not be empty.'}%>
+<button <%= form.submit 'Add Post', data:{confirm:'Please make sure the title has more than 10 characters and both of title/content can not be empty.'} %></button>
 <%end%>
 <br>
 <br>
