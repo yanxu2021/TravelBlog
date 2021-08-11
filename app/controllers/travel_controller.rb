@@ -1,5 +1,9 @@
 class TravelController < ApplicationController
   def index
     @travel = Travel.all
-end
+  end
+
+  def show
+    @travel = Travel.find(params[:id])
+  end
 end
