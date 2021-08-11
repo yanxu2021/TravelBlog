@@ -1,9 +1,13 @@
-<%# show: just one thing from the db %>
+<!-- show: just one thing from the db -->
 <div>
 <h2><%=@travel.title%></h2>
 <h4><%=@travel.content%></h4>
 <br>
 <br>
-<h4><%=link_to 'Delete Post', delete_path(@travel), method: :delete, data:{confirm:'Are you sure you want to delete the post?'} %></h4>
+<h4><%=link_to 'Update Post', edit_travel_path(@travel) %></h4>
+<br>
+<h4><%=link_to 'Delete Post', delete_travel_path(@travel), method: :delete, data:{confirm:'Are you sure you want to delete the post?'} %></h4>
+<br>
 <%=link_to 'Back Home', travels_path%>
+
 </div>

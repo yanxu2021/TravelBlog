@@ -1,0 +1,15 @@
+<h2>Update Post</h2>
+<%= form_with model: @travel, method: :patch, local: true do |form|%>
+<%=form.label :title %>
+<%= form.text_field :title %>
+<br>
+<br>
+<%=form.label :content %>
+<%=form.text_area :content, size: "70x5"%>
+<br>
+<br>
+<%= form.submit 'Update Post'%>
+<%end%>
+<br>
+<br>
+<%=link_to 'Back Home', travels_path%>
