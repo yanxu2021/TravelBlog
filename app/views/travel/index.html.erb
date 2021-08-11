@@ -2,8 +2,8 @@
 <div>
 <ul>
 <% @travel.each do |value| %>
-<li><%= link_to value.title, show_path(value)%></li>
+<li><%= link_to value.title, travel_path(value)%></li>
 <% end %>
 </ul>
-<%=link_to 'Add New Post', new_path%>
+<%=link_to 'Add New Post', new_travel_path%>
 </div>

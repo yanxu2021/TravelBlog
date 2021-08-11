@@ -25,9 +25,24 @@ class TravelController < ApplicationController
     if @travel.destroy
       redirect_to travels_path
     else
-      redirect_to travels_path(@travel)
-    end  
+      redirect_to travel_path(@travel)
+    end
   end
+
+  def edit
+    @travel = Travel.find(params[:id])
+  end
+
+  def update
+    @travel = Travel.find(params[:id])
+    @travel.update(travel_params)
+    if @travel.valid?
+      redirect_to travel_path(@travel)
+    else
+      redirect_to edit_travel_path(@travel)
+    end
+  end
+
 
   # Anything below private can only be called inside the scope of this class
   private
