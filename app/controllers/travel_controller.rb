@@ -6,4 +6,8 @@ class TravelController < ApplicationController
   def show
     @travel = Travel.find(params[:id])
   end
+
+  def new
+    @travel = Travel.new
+  end
 end
