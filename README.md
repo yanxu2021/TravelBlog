@@ -1,5 +1,7 @@
 *******************************************************************************************************************************
 # Challenges
+
+继续完成这个app，变成自己的travel blog，整理过往的旅行经验。写blog。
 ### As a developer, I have been commissioned to create an application where a user can see and create blog posts.
 ### As a developer, I can create a full-stack Rails application.
 ## Setup
